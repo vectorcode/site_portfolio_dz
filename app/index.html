@@ -36,7 +36,7 @@
 
 	<!-- JS -->
 	<script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
-	<script type="text/javascript" src="bower/html5shiv/dist/html5shiv.min.js"></script>
+</script>
 </head>
 <body>
 
@@ -46,23 +46,23 @@
 	<!-- main-block -->
 	<div class="main-block">
 		<!-- header -->
-		<header>
+		<header class="header">
 			<div class="wrap-st-1">
 				<div class="header-block-logo">
 					<a href="/" class="item-logo"><img src="img/logo.png" alt="logo site portolio"></a>
-					<span class="header-logo-text">Сайт портфолио разработчика интерфейсов Павла Кондакова</span>
+					<span class="header-logo-text" hidden >Сайт портфолио разработчика интерфейсов Павла Кондакова</span>
 				</div>
 				<!-- Навигация-->
-				<nav class="header-nav">
-					<ul class="nav-block">
+				<nav class="header-nav" hidden>
+					<ul class="nav-block" hidden>
 						<li class="header-nav-item">
-							<a href="about.html" class="header-nav-link">Обо мне</a>
+							<a href="about.html" class="header-nav-link active first">Обо мне</a>
 						</li>
 						<li class="header-nav-item">
 							<a href="works.html" class="header-nav-link">Мои работы</a>
 						</li>
 						<li class="header-nav-item">
-							<a href="contaсt.html" class="header-nav-link">Связаться со мной</a>
+							<a href="contact.html" class="header-nav-link">Связаться со мной</a>
 						</li>
 					</ul>
 				</nav><!-- /Навигация-->
@@ -84,6 +84,7 @@
 					</ul>
 				</div><!-- /Иконки социальных сетей  -->
 			</div><!-- /header-soc-seti -->
+			<div class="clearfix"></div>
 			<div class="line-gradient"></div>
 		</header>
 		<!-- /header -->
@@ -111,8 +112,8 @@
 								<li class="main-cnt-data-item">
 									<span class="main-cnt-data-item-title">Моя специализация:</span><div class="main-cnt-data-item-cnt">FRONTEND разработчик</div>
 								</li>
-								<li class="main-cnt-data-item">
-									<span class="main-cnt-data-item-title no-bold">Моя специализация:</span><div class="main-cnt-data-item-cnt">
+								<li class="main-cnt-data-item key_nv">
+									<span class="main-cnt-data-item-title no-bold">Ключевые навыки:</span><div class="main-cnt-data-item-cnt">
 										<ul class="skils-bl">
 											<li class="skils-bl-item">
 												html
@@ -153,32 +154,32 @@
 						<div class="main-cnt-bl-title">Опыт работы</div>
 						<div class="main-cnt-bl-body">
 							<ul class="main-cnt-data">
-								<li class="main-cnt-data-item">
+								<li class="main-cnt-data-item clearfix">
 									<div class="main-cnt-data-item-ico bag"></div>
 									<div class="main-cnt-data-item-text">
-										<span class="main-cnt-data-item-text-b">Орловская торгово промышленная палата (г. Орёл) - Специалист по рекламе</span>
-										Август 2010 - Сентябрь 2012
+										Орловская торгово промышленная палата (г. Орёл) - Специалист по рекламе
+										<span class="main-cnt-data-item-text-lt">Август 2010 - Сентябрь 2012</span>
 									</div>
 								</li>
-								<li class="main-cnt-data-item">
+								<li class="main-cnt-data-item clearfix">
 									<div class="main-cnt-data-item-ico bag"></div>
 									<div class="main-cnt-data-item-text">
-										<span class="main-cnt-data-item-text-b">ООО «Регион Центр» (г. Орёл) - WEB мастер</span>
-										Сентябрь 2012 - Август 2013
+										ООО «Регион Центр» (г. Орёл) - WEB мастер
+										<span class="main-cnt-data-item-text-lt">Сентябрь 2012 - Август 2013</span>
 									</div>
 								</li>
-								<li class="main-cnt-data-item">
+								<li class="main-cnt-data-item clearfix">
 									<div class="main-cnt-data-item-ico bag"></div>
 									<div class="main-cnt-data-item-text">
-										<span class="main-cnt-data-item-text-b">ООО "Кинопортал" (г. Москва) - Frontend developer</span>
-										Авгус 2015 - Февраль 2015
+										ООО "Кинопортал" (г. Москва) - Frontend developer
+										<span class="main-cnt-data-item-text-lt">Авгус 2013 - Февраль 2015</span>
 									</div>
 								</li>
-								<li class="main-cnt-data-item">
+								<li class="main-cnt-data-item clearfix">
 									<div class="main-cnt-data-item-ico bag"></div>
 									<div class="main-cnt-data-item-text">
-										<span class="main-cnt-data-item-text-b">Freelance - Frontend developer</span>
-										Февраль 2015 - по настоящее время
+										Freelance - Frontend developer
+										<span class="main-cnt-data-item-text-lt">Февраль 2015 - по настоящее время</span>
 									</div>
 								</li>									
 
@@ -193,15 +194,15 @@
 								<li class="main-cnt-data-item">
 									<div class="main-cnt-data-item-ico study"></div>
 									<div class="main-cnt-data-item-text">
-										<span class="main-cnt-data-item-text-b">Орловский государственный институт экономики и торговли</span>
-										2005 - 2010
+										Орловский государственный институт экономики и торговли
+										<span class="main-cnt-data-item-text-lt">2005 - 2010</span>
 									</div>
 								</li>
 								<li class="main-cnt-data-item">
 									<div class="main-cnt-data-item-ico courses"></div>
 									<div class="main-cnt-data-item-text">
-										<span class="main-cnt-data-item-text-b">Курсы Loftscool.ru</span>
-										Март 2015 - по настоящее время
+										Курсы Loftscool.ru
+										<span class="main-cnt-data-item-text-lt">Март 2015 - по настоящее время</span>
 									</div>
 								</li>
 							</ul>
@@ -216,37 +217,36 @@
 					<nav class="sitebar-nav-block">
 						<ul class="nav-block">
 							<li class="sitebar-nav-item">
-								<a href="about.html" class="sitebar-nav-link">Обо мне</a>
+								<a href="about.html" class="sitebar-nav-link active">Обо мне</a>
 							</li>
 							<li class="sitebar-nav-item">
 								<a href="works.html" class="sitebar-nav-link">Мои работы</a>
 							</li>
 							<li class="sitebar-nav-item">
-								<a href="contaсt.html" class="sitebar-nav-link">Связаться со мной</a>
+								<a href="contact.html" class="sitebar-nav-link">Связаться со мной</a>
 							</li>
 						</ul>
 					</nav>
 					<!-- /Навигация в сайт баре-->
 
-					<address class="contaсt">
-						<div class="contaсt-bl-title">Контакты</div>
-						<ul class="contaсt-bl">
-							<li class="contaсt-bl-item mail">
-								<a href="mailto: info@pavelkondakov.ru" class="contaсt-bl-item-link">info@pavelkondakov.ru</a>
+					<address class="contact">
+						<div class="contact-bl-title">Контакты</div>
+						<ul class="contact-bl">
+							<li class="contact-bl-item mail">
+								<a href="mailto: info@pavelkondakov.ru" class="contact-bl-item-link"><span class="ico_mail"></span>info@pk.ru</a>
 							</li>
-							<li class="contaсt-bl-item phone">
-								<a href="tel: +79258851647" class="contaсt-bl-item-link">+79258851647</a>
+							<li class="contact-bl-item phone"><span class="ico_phone"></span>
+								<a href="tel: +79258851647" class="contact-bl-item-link">+79258851647</a>
 							</li>
-							<li class="contaсt-bl-item skype">
-								<a href="skype: vektor_777_" class="contaсt-bl-item-link">vektor_777_</a>
+							<li class="contact-bl-item skype"><span class="ico_skype"></span>
+								<a href="skype: vektor_777_" class="contact-bl-item-link">vektor_777_</a>
 							</li>
 						</ul>
 					</address>
 				</aside>
 			</div><!-- /wrap-st-2-->
 		</section>
-		<!-- /content -->
-		<div class="mobile-soc-bl">
+		<div class="mobile-soc-bl" hidden>
 			<ul class="soc-seti-block">
 				<li class="soc-seti-item">
 					<a href="" class="soc-seti-link vk" target='_blank'>Вконтакте</a>
@@ -262,8 +262,10 @@
 				</li>
 			</ul>
 		</div>	<!-- /mobile-soc-bl -->	
+		<div class="clearfix"></div>
+		<!-- /content -->
 						
-		<footer class="footer">
+		<footer class="footer clearfix">
 			<div class="line-gradient"></div>
 			<div class="wrap-st-2">
 				<div class='lock-bl'></div>
