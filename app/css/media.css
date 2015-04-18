@@ -1,0 +1,133 @@
+
+/* Медиа стили для плпаншета  1000 - 680*/
+@media (max-width: 1000px) {
+  .sitebar-nav-block, .contact-bl-title, .lock-bl{
+  	display: none;
+   }
+   .header-nav{
+   	display: block;
+   	float: right;
+   	}
+   .main-content{
+   	float: none;
+   	margin: 0 auto;
+   	padding: 0px 35px;
+    }
+    .main-cnt-bl{
+		max-width: 100%;
+    }
+    .contact-bl-item{
+		width: 33%;
+		float: left;
+		padding: 10px 0px;
+		text-align: center;
+    }
+   .contact-bl-item.phone{
+		width: 34%;
+   }
+   	.contact{
+   		width: 100%;
+   	}
+   	.wrap-st-1{
+		padding: 0px 35px;
+   	}
+
+}
+/*/ Медиа стили для плпаншета  1000 - 760*/
+
+/* Медиа стили для телефона  760 - 320*/
+@media (max-width: 760px) {
+	.header-soc-seti{
+		display: none;
+	}
+	.header-nav-link.first:before {
+		left: 210px;
+	}
+   	.wrap-st-1{
+		padding: 0px 13px;
+   	}
+   	.main-content{
+	   	padding: 0px 13px;
+    }
+    .contact-bl-item{
+		width:100%;
+		float: none;
+		padding: 10px 0px;
+		text-align: center;
+    }
+    .contact-bl-item.phone{
+		width: 100%;
+   }
+   .main-cnt-avatar-bl{
+   	float: none;
+   	margin: 20px auto 0px auto;
+   }
+	.main-cnt-data{
+		text-align: center;
+		line-height: 1.3
+	}
+   .main-cnt-data-item-title{
+   	float: none;
+   	text-align: center;
+   	margin: 0;
+   }
+   .main-cnt-bl-title{
+   	line-height: 1;
+   }
+   .key_nv{
+   	margin-left: 0px;
+   }
+  .main-cnt-bl-body, .main-cnt-bl-body-ab{
+  	padding: 25px;
+  }
+  .header-block-logo{
+  	width: 190px;
+  }
+	.header-block-logo a img{
+  	width:190px;
+  }
+  .header-nav{
+  	margin-left: 20px;
+  }
+  .mobile-soc-bl{
+  	display: block;
+  	padding: 20px 13px;
+  	height: 54px;
+   }
+  .main-cnt-data-item-ico{
+	 float: none;
+	 margin: 20px auto;
+   }
+   .main-cnt-data-item-text{
+   	margin-left: 0;
+   }
+   .footer-text{
+   	margin: 0px 13px;
+   }
+   .skils-bl{
+     margin-left: 0;
+   }
+   .main-cnt-avatar-bl{
+     margin: 20px auto;
+   }
+   .main-cnt-data-item-text{
+    padding: 50px 0px 0px 0px;
+   }
+   .bag {
+    background: url(../img/ico_bag.png) no-repeat;
+    background-position: top center;
+  }
+  .study {
+    background: url(../img/ico_bag.png) no-repeat;
+    background-position: top center;
+  }
+  .courses {
+    background: url(../img/ico_bag.png) no-repeat;
+    background-position: top center;
+  }
+  .mobile-soc-bl .soc-seti-block{
+    width: 260px;
+    margin: 0 auto; 
+  }
+}
+/* /Медиа стили для телефона  680 - 320*/

@@ -1,0 +1,80 @@
+.main-cnt-avatar-bl{
+	float: left;
+	width: 143px;
+	height: 143px;
+	margin: 17px 25px 25px 33px;
+	line-height: 1;
+	border: 5px solid #35a8be;
+	-webkit-border-radius: 75px;
+	border-radius: 50% 50%;
+	overflow: hidden;
+}
+.main-cnt-data{
+	list-style: none;
+	line-height: 0.85;
+}
+.main-cnt-data-item-title{
+	font-weight: bold;
+	float: left;
+	margin: 0px 20px 0px 0px;
+}
+.skils-bl{
+	list-style: none;
+	display: block;
+	margin-left: 162px;
+}	
+.skils-bl-item{
+	display: inline-block;
+	color: #fff;
+	padding: 5px 14px;
+	margin:4px;
+	font-family: proxima_nova_condensedSBd;
+	font-size: 14px;
+	line-height: 1;
+	background: -webkit-linear-gradient(top, rgba(57, 166, 190, 0.29) 0%, rgba(59, 168, 191, 0.91) 6%, rgba(46, 140, 162, 0.89) 89%, rgba(46, 140, 161, 0.85) 94%, rgba(43, 138, 159, 0.33) 100%);
+background: -o-linear-gradient(top, rgba(57, 166, 190, 0.29) 0%, rgba(59, 168, 191, 0.91) 6%, rgba(46, 140, 162, 0.89) 89%, rgba(46, 140, 161, 0.85) 94%, rgba(43, 138, 159, 0.33) 100%);
+background: -ms-linear-gradient(top, rgba(57, 166, 190, 0.29) 0%, rgba(59, 168, 191, 0.91) 6%, rgba(46, 140, 162, 0.89) 89%, rgba(46, 140, 161, 0.85) 94%, rgba(43, 138, 159, 0.33) 100%);
+background: -moz-linear-gradient(top, rgba(57, 166, 190, 0.29) 0%, rgba(59, 168, 191, 0.91) 6%, rgba(46, 140, 162, 0.89) 89%, rgba(46, 140, 161, 0.85) 94%, rgba(43, 138, 159, 0.33) 100%);
+background: linear-gradient(to bottom, rgba(57, 166, 190, 0.29) 0%, rgba(59, 168, 191, 0.91) 6%, rgba(46, 140, 162, 0.89) 89%, rgba(46, 140, 161, 0.85) 94%, rgba(43, 138, 159, 0.33) 100%);
+
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}	
+
+.main-cnt-data-item{
+	margin-bottom: 20px;
+}
+
+.key_nv{
+	margin-left: 210px;
+}
+.main-cnt-data-item-ico{
+	float: left;
+}
+
+.main-cnt-data-item-text{
+	line-height: 1.2;
+	padding-left: 104px;
+	font-size: 17px;
+	
+}
+	
+.bag{
+	background: url(../img/ico_bag.png) no-repeat;
+	background-position: 38px center;
+
+}
+.study{
+	background: url(../img/ico_study.png) no-repeat;
+	background-position: 30px center;
+}
+.courses{
+	background: url(../img/ico_doc.png) no-repeat;
+	background-position: 38px center;
+}
+.main-cnt-data-item-text-lt{
+	display: block;
+	font-family: fira_sanslight, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}

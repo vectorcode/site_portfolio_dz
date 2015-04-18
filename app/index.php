@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
-	<title>Портфолио Кондакова Павла</title>
+	<title>Обо мне -- Портфолио Кондакова Павла</title>
 	
 	<!-- favicons-->
 	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
@@ -33,59 +33,24 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="css/media.css">
 
 	<!-- JS -->
 	<script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
 </script>
 </head>
 <body>
+<?php $act_about = 'active'; ?>
 
 	 <!--[if lt IE 8]>
             <p class="browserupgrade">Ваш браузер<strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
         <![endif]-->
 	<!-- main-block -->
-	<div class="main-block">
+	<div class="wrapper">
 		<!-- header -->
 		<header class="header">
-			<div class="wrap-st-1">
-				<div class="header-block-logo">
-					<a href="/" class="item-logo"><img src="img/logo.png" alt="logo site portolio"></a>
-					<span class="header-logo-text" hidden >Сайт портфолио разработчика интерфейсов Павла Кондакова</span>
-				</div>
-				<!-- Навигация-->
-				<nav class="header-nav" hidden>
-					<ul class="nav-block" hidden>
-						<li class="header-nav-item">
-							<a href="about.html" class="header-nav-link active first">Обо мне</a>
-						</li>
-						<li class="header-nav-item">
-							<a href="works.html" class="header-nav-link">Мои работы</a>
-						</li>
-						<li class="header-nav-item">
-							<a href="contact.html" class="header-nav-link">Связаться со мной</a>
-						</li>
-					</ul>
-				</nav><!-- /Навигация-->
-				<!-- Иконки социальных сетей -->
-				<div class="header-soc-seti">
-					<ul class="soc-seti-block">
-						<li class="soc-seti-item">
-							<a href="" class="soc-seti-link vk" target='_blank'>Вконтакте</a>
-						</li>
-						<li class="soc-seti-item">
-							<a href="" class="soc-seti-link tw" target='_blank'>Twitter</a>
-						</li>
-						<li class="soc-seti-item">
-							<a href="" class="soc-seti-link fb" target='_blank'>Facebook</a>
-						</li>
-						<li class="soc-seti-item">
-							<a href="" class="soc-seti-link gt" target='_blank'>Github</a>
-						</li>
-					</ul>
-				</div><!-- /Иконки социальных сетей  -->
-			</div><!-- /header-soc-seti -->
-			<div class="clearfix"></div>
-			<div class="line-gradient"></div>
+			<?php include 'blocks/header.php'; ?>
 		</header>
 		<!-- /header -->
 		<!-- content -->	
@@ -134,13 +99,13 @@
 												php
 											</li>
 											<li class="skils-bl-item">
-												CMS Wordpress
+												Wordpress
 											</li>
 											<li class="skils-bl-item">
-												Adobe Photoshop
+												Photoshop
 											</li>
 											<li class="skils-bl-item">
-												Adobe Illustrator
+												Illustrator
 											</li>
 										</ul>
 									</div>
@@ -154,29 +119,24 @@
 						<div class="main-cnt-bl-title">Опыт работы</div>
 						<div class="main-cnt-bl-body">
 							<ul class="main-cnt-data">
-								<li class="main-cnt-data-item clearfix">
-									<div class="main-cnt-data-item-ico bag"></div>
-									<div class="main-cnt-data-item-text">
+								<li class="main-cnt-data-item">
+									<div class="main-cnt-data-item-text bag">
 										Орловская торгово промышленная палата (г. Орёл) - Специалист по рекламе
 										<span class="main-cnt-data-item-text-lt">Август 2010 - Сентябрь 2012</span>
 									</div>
 								</li>
-								<li class="main-cnt-data-item clearfix">
-									<div class="main-cnt-data-item-ico bag"></div>
-									<div class="main-cnt-data-item-text">
+								<li class="main-cnt-data-item">
+									<div class="main-cnt-data-item-text bag">
 										ООО «Регион Центр» (г. Орёл) - WEB мастер
 										<span class="main-cnt-data-item-text-lt">Сентябрь 2012 - Август 2013</span>
-									</div>
 								</li>
-								<li class="main-cnt-data-item clearfix">
-									<div class="main-cnt-data-item-ico bag"></div>
+								<li class="main-cnt-data-item bag">
 									<div class="main-cnt-data-item-text">
 										ООО "Кинопортал" (г. Москва) - Frontend developer
 										<span class="main-cnt-data-item-text-lt">Авгус 2013 - Февраль 2015</span>
 									</div>
 								</li>
-								<li class="main-cnt-data-item clearfix">
-									<div class="main-cnt-data-item-ico bag"></div>
+								<li class="main-cnt-data-item bag">
 									<div class="main-cnt-data-item-text">
 										Freelance - Frontend developer
 										<span class="main-cnt-data-item-text-lt">Февраль 2015 - по настоящее время</span>
@@ -191,15 +151,13 @@
 						<div class="main-cnt-bl-title">Образование</div>
 						<div class="main-cnt-bl-body">
 							<ul class="main-cnt-data">
-								<li class="main-cnt-data-item">
-									<div class="main-cnt-data-item-ico study"></div>
+								<li class="main-cnt-data-item study">
 									<div class="main-cnt-data-item-text">
 										Орловский государственный институт экономики и торговли
 										<span class="main-cnt-data-item-text-lt">2005 - 2010</span>
 									</div>
 								</li>
-								<li class="main-cnt-data-item">
-									<div class="main-cnt-data-item-ico courses"></div>
+								<li class="main-cnt-data-item courses">
 									<div class="main-cnt-data-item-text">
 										Курсы Loftscool.ru
 										<span class="main-cnt-data-item-text-lt">Март 2015 - по настоящее время</span>
@@ -213,36 +171,7 @@
 
 				</article><!-- /main-content-->
 				<aside>
-					<!-- Навигация в сайт баре-->
-					<nav class="sitebar-nav-block">
-						<ul class="nav-block">
-							<li class="sitebar-nav-item">
-								<a href="about.html" class="sitebar-nav-link active">Обо мне</a>
-							</li>
-							<li class="sitebar-nav-item">
-								<a href="works.html" class="sitebar-nav-link">Мои работы</a>
-							</li>
-							<li class="sitebar-nav-item">
-								<a href="contact.html" class="sitebar-nav-link">Связаться со мной</a>
-							</li>
-						</ul>
-					</nav>
-					<!-- /Навигация в сайт баре-->
-
-					<address class="contact">
-						<div class="contact-bl-title">Контакты</div>
-						<ul class="contact-bl">
-							<li class="contact-bl-item mail">
-								<a href="mailto: info@pavelkondakov.ru" class="contact-bl-item-link"><span class="ico_mail"></span>info@pk.ru</a>
-							</li>
-							<li class="contact-bl-item phone"><span class="ico_phone"></span>
-								<a href="tel: +79258851647" class="contact-bl-item-link">+79258851647</a>
-							</li>
-							<li class="contact-bl-item skype"><span class="ico_skype"></span>
-								<a href="skype: vektor_777_" class="contact-bl-item-link">vektor_777_</a>
-							</li>
-						</ul>
-					</address>
+					<?php include 'blocks/site_bar.php'; ?>
 				</aside>
 			</div><!-- /wrap-st-2-->
 		</section>
@@ -264,31 +193,18 @@
 		</div>	<!-- /mobile-soc-bl -->	
 		<div class="clearfix"></div>
 		<!-- /content -->
+	</div>	<!-- /wrapper -->
 						
-		<footer class="footer clearfix">
-			<div class="line-gradient"></div>
-			<div class="wrap-st-2">
-				<div class='lock-bl'></div>
-				<div class="footer-text">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
-			</div><!-- /wrap-st-2-->
-		</footer>
-	</div>
-	<!-- /main-block -->
+	<footer class="footer page-footer">
+		<?php include 'blocks/footer.php';?>
+	</footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='https://www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-    </script>
+    <?php include 'blocks/counters.php'; ?>
 	
 </body>
 </html>
