@@ -1,4 +1,12 @@
-
+/* Медиа стили для desctop  1000 - 680*/
+@media (min-width: 1001px) {
+  .work-item:nth-child(3n+1){
+   margin-left: 0px;
+  }
+  .work-item:nth-child(3n+3){
+     margin-right: 0;
+  }
+}
 /* Медиа стили для плпаншета  1000 - 680*/
 @media (max-width: 1000px) {
   .sitebar-nav-block, .contact-bl-title, .lock-bl{
@@ -29,8 +37,16 @@
    		width: 100%;
    	}
    	.wrap-st-1{
-		padding: 0px 35px;
+		  padding: 0px 35px;
    	}
+
+    .bl-works{
+      text-align: center;
+    }
+    .work-item{
+      float: none;
+      display: inline-block;
+    }
 
 }
 /*/ Медиа стили для плпаншета  1000 - 760*/

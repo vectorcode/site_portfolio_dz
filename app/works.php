@@ -34,6 +34,7 @@
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/works.css">
+	<link rel="stylesheet" href="css/media.css">
 
 	<!-- JS -->
 	<script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
@@ -59,7 +60,7 @@
 			
 					<section class="main-cnt-bl">
 						<div class="main-cnt-bl-title">Мои работы</div>
-						<div class="main-cnt-bl-body">
+						<div class="main-cnt-bl-body clearfix">
 							<ul class="bl-works">
 								<li class="work-item">
 									<figure class="work-item-fgr">
@@ -67,7 +68,7 @@
 										   <div class="work-item-blk-img mask-style">
 							                    <img src="img/site_1.png">
 							                    <div class="mask">
-							                        <p>Hover Style #3</p>
+							                        <p>назввание</p>
 							                    </div>
 							                </div>
 										</a>
@@ -81,7 +82,7 @@
 										   <div class="work-item-blk-img mask-style">
 							                    <img src="img/site_2.png">
 							                    <div class="mask">
-							                        <p>Hover Style #3</p>
+							                        <p>назввание</p>
 							                    </div>
 							                </div>
 										</a>
@@ -95,7 +96,7 @@
 										   <div class="work-item-blk-img mask-style">
 							                    <img src="img/site_3.png">
 							                    <div class="mask">
-							                        <p>Hover Style #3</p>
+							                        <p>назввание</p>
 							                    </div>
 							                </div>
 										</a>
@@ -109,7 +110,7 @@
 										   <div class="work-item-blk-img mask-style">
 							                    <img src="img/site_4.png">
 							                    <div class="mask">
-							                        <p>Hover Style #3</p>
+							                        <p>назввание</p>
 							                    </div>
 							                </div>
 										</a>

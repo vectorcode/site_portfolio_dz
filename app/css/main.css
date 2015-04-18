@@ -18,7 +18,7 @@ body{
 	background: url(../img/bg.jpg);
 	font-family: fira_sansbook, Arial, Helvetica, sans-serif;
 	color: #4a545d;
-	min-width: 320px;
+	min-width: 300px;
 }
 
 /* footer внизу страницы*/
@@ -150,6 +150,7 @@ background: linear-gradient(to right, rgb(231, 239, 243) 0%, rgb(151, 186, 197) 
 	position: absolute;
 	margin-top: 32px;
 	right: 5px;
+	z-index: 1000;
 	-webkit-box-shadow: 1px 3px 8px 1px rgba(13,16,7,.35);
 	-moz-box-shadow: 1px 3px 8px 1px rgba(13,16,7,.35);
 	box-shadow: 1px 3px 8px 1px rgba(13,16,7,.35);
