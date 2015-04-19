@@ -47,7 +47,22 @@
       float: none;
       display: inline-block;
     }
+  .grid-50{
 
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+    float: none;
+  }
+  .fl-l, .fl-r{
+    float: none;
+  }
+  .btn{
+    display: block;
+    margin: 0 auto;
+  }
+  .block-capcha{
+    width: 160px;
+  }
 }
 /*/ Медиа стили для плпаншета  1000 - 760*/
 
@@ -144,6 +159,13 @@
   .mobile-soc-bl .soc-seti-block{
     width: 260px;
     margin: 0 auto; 
+  }
+  .main-contact-bl-body{
+    padding: 20px;
+  }
+  .main-contact-bl-title {
+    padding: 42px 20px 35px 20px;
+    font-size: 20px;
   }
 }
 /* /Медиа стили для телефона  680 - 320*/

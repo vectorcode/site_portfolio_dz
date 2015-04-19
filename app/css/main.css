@@ -70,6 +70,31 @@ background: -ms-linear-gradient(left, rgb(231, 239, 243) 0%, rgb(151, 186, 197) 
 background: -moz-linear-gradient(left, rgb(231, 239, 243) 0%, rgb(151, 186, 197) 25%, rgb(35, 107, 126) 50%, rgb(151, 186, 197) 75%, rgb(231, 239, 243) 100%);
 background: linear-gradient(to right, rgb(231, 239, 243) 0%, rgb(151, 186, 197) 25%, rgb(35, 107, 126) 50%, rgb(151, 186, 197) 75%, rgb(231, 239, 243) 100%);
 }
+
+.block-grid{
+	margin-bottom: 15px;
+}
+.grid-50{
+	box-sizing: border-box;
+	width: 50%;
+	padding: 0px 9px;
+	float: left;
+}
+.block-grid .grid-50:first-child{
+	padding-left: 0px; 
+}
+.block-grid .grid-50:last-child{
+	padding-right: 0px; 
+}
+:focus {
+  outline: 0;
+}
+.fl-l{
+	float: left;
+}
+.fl-r{
+	float: right;
+}
 /* / Общии правила*/
 
 /* header */
@@ -223,6 +248,7 @@ background: linear-gradient(to right, rgb(231, 239, 243) 0%, rgb(151, 186, 197) 
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	margin: 0px 0px 25px 0px;
+	overflow: hidden;
 }
 .main-cnt-bl-title{
 	display: inline-block;
