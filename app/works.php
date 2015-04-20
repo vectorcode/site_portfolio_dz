@@ -35,12 +35,15 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/works.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<link rel="stylesheet" type="text/css" href="css/modal-window.css" />
 
 	<!-- JS -->
 	<script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
 </script>
 </head>
 <body>
+	
 <?php $act_works = 'active'; ?>
 
 	 <!--[if lt IE 8]>
@@ -120,7 +123,7 @@
 								</li><!-- /work-item-->
 
 								<li class="work-item">
-									<div class="add-work">
+									<div class="add-work md-trigger md-setperspective" data-modal="modal-11">
 										<img src="img/ico_new_site.png">
 										<p>Добавить проект</p>
 									</div><!-- /add-work-->
@@ -161,10 +164,62 @@
 		</footer>
 	</div>
 	<!-- /main-block -->
+	<div class="md-modal md-effect-11" id="modal-11">
+		<div class="md-content">
+			<div class="file-md">
+		<div class="file-md-title">
+			Добавление проекта
+			<div class="md-close file-md-close">x</div>
+		</div>
+		<div class="file-md-cont">
+			<form action="" id="file-md-form">
+				<div class="form-item">
+					<label for="prj_name" class="lable-item">Название проекта</label>
+					<input type="text" name="prj_name" id="prj_name" class="input-item" placeholder='Введите название'>
+				</div><!-- /form-item-->
+				<div class="form-item">
+					<label for="prj_name" class="lable-item">Название проекта</label>
+					<input type="text" name="prj_name" id="prj_name" class="input-item" placeholder='Введите название'>
+				</div><!-- /form-item-->
+				
+				<div class="form-item">
+					<label for="prj_img" class="lable-item">Картинка проекта</label>
+					<div class="bl-upl-img">
+						<input type="text" name="prj_img" id="prj_img" class="input-item" placeholder='Загрузите изображение'>
+						<div class="bl-upl-icon">
+							<input type="file" name="prj_img" id="prj_img" class="input-item" placeholder='Загрузите изображение'>
+						</div>
+					</div><!-- /bl-upl-img-->
+				</div><!-- /form-item-->
+				
+				<div class="form-item">
+					<label for="prj_url" class="lable-item">URL проекта</label>
+					<input type="text" name="prj_url" id="prj_url" class="input-item" placeholder='Добавьте ссылку'>
+				</div><!-- /form-item-->
+				
+				<div class="form-item">
+					<label for="prj_text" class="lable-item">Описание</label>
+					<textarea  name="prj_text" id="prj_text" rows="8" class="textarea-item" placeholder='Пара слов о Вашем проекте'></textarea>
+				</div><!-- /form-item-->
+				<div class="form-item">
+					<input type="submit" class="btn btn-send" value="Добавить">
+				</div><!-- /form-item-->
+		
+			</form>
+		</div><!-- /file-md-cont-->
+	</div><!-- /add-file-md-->
+		</div>
+	</div><!-- /modal-11 -->
+	<div class="md-overlay"></div>
+
+	
+
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
+    <script src="js/modal-classie.js"></script>
+    <script src="js/modalEffects.js"></script>
     <script src="js/main.js"></script>
 
     <?php include 'blocks/counters.php'; ?>

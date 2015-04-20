@@ -121,5 +121,38 @@
   line-height: 1;
   color: #68bbce;
   cursor: pointer;
-
 }
+
+/* Modal Content styles */
+.file-md{
+   margin: 0 auto;
+   max-width: 360px;
+   background-color: #eff3f7;
+   overflow: hidden;
+   font-family: fira_sansbook, Arial, Helvetica, sans-serif;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   -webkit-box-shadow: 0 6px 12px 1px rgba(13,16,7,.35);
+   -moz-box-shadow: 0 6px 12px 1px rgba(13,16,7,.35);
+   box-shadow: 0 6px 12px 1px rgba(13,16,7,.35);
+}
+.file-md-title{
+   background-color: #48cbe8;
+   color: #fff;
+   font-size: 25px;
+   border-bottom: 9px solid #67dffa;
+   padding: 10px 12px;
+}
+.file-md-close{
+   float: right;
+   border: 1px solid #fff;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   padding: 1px 8px;
+   line-height: 1;
+   cursor: pointer;
+}
+.file-md-cont{
+   padding: 20px 12px;
+}
+/* /Modal Content styles */
