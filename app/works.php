@@ -21,6 +21,7 @@
 	<link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96">
 	<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
 	<link rel="manifest" href="/manifest.json">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 	<meta name="theme-color" content="#ffffff">
