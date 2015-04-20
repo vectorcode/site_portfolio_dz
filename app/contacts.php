@@ -33,6 +33,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="css/contacts.css">
 	<link rel="stylesheet" href="css/media.css">
 

@@ -1,0 +1,58 @@
+
+.content-login-bl{
+	padding: 10px;
+}
+.login-bl{
+	max-width: 590px;
+	margin: 100px auto 100px auto;
+	background-color: #eff3f7;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+   -webkit-box-shadow: 0 4px 7px rgba(13,16,7,.29);
+	-moz-box-shadow: 0 4px 7px rgba(13,16,7,.29);
+	box-shadow: 0 4px 7px rgba(13,16,7,.29);
+	overflow: hidden;
+}
+.login-bl-title{
+  background-color: #48cbe8;
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  padding: 17px 15px;
+  border-bottom: 15px solid #67dffa;
+}
+.login-bl-body{
+	padding: 14px 80px 20px 80px;
+	text-align: center;
+}
+.login-bl-body .lable-item{
+	font-size: 36px;
+}
+.login-bl-body .input-item{
+	padding: 20px 22px;
+	font-size: 17px;
+}
+.login-bl-btn{
+	padding-top: 30px;
+}
+.login-bl-btn .btn-send{
+	font-size: 36px;
+	padding: 6px 60px;
+	line-height: 1;
+    border: 4px solid #48cbe8;
+ 	border-bottom-width: 4px;
+ 	 -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.login-bl-btn .btn-send{
+  background: #48cbe8;
+  border-bottom-color: #3ba8c0;
+}
+.login-bl-btn .btn-send:hover{
+  border-bottom-color: #48cbe8;
+}
+.login-bl-btn .btn-send:active{
+  border-bottom-color: #48cbe8;
+  border-top-color: #3ba8c0;
+}

@@ -167,5 +167,11 @@
     padding: 42px 20px 35px 20px;
     font-size: 20px;
   }
+  .login-bl-body{
+      padding: 14px 10px 20px 10px;
+  }
+  .login-bl-title{
+    font-size: 30px;
+  }
 }
 /* /Медиа стили для телефона  680 - 320*/
