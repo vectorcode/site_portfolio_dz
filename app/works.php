@@ -51,7 +51,7 @@
             <p class="browserupgrade">Ваш браузер<strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
         <![endif]-->
 	<!-- main-block -->
-	<div class="main-block">
+	<div class="wrapper">
 		<!-- header -->
 		<header class="header">
 			<?php include 'blocks/header.php'; ?>
@@ -140,7 +140,7 @@
 					<?php include 'blocks/site_bar.php'; ?>
 				</aside>
 			</div><!-- /wrap-st-2-->
-		</section>
+		</section><!-- /content -->
 		<div class="mobile-soc-bl" hidden>
 			<ul class="soc-seti-block">
 				<li class="soc-seti-item">
@@ -158,13 +158,12 @@
 			</ul>
 		</div>	<!-- /mobile-soc-bl -->	
 		<div class="clearfix"></div>
-		<!-- /content -->
+		
+	</div><!-- /wrapper -->
 						
-		<footer class="footer clearfix">
+	<footer class="footer page-footer">
 			<?php include 'blocks/footer.php';?>
 		</footer>
-	</div>
-	<!-- /main-block -->
 	<div class="md-modal md-effect-11" id="modal-11">
 		<div class="md-content">
 			<div class="file-md">

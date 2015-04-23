@@ -1,7 +1,7 @@
 	<div class="wrap-st-1">
 				<div class="header-block-logo">
 					<a href="/app/" class="item-logo"><img src="img/logo.png" alt="logo site portolio"></a>
-					<span class="header-logo-text" hidden >Сайт портфолио разработчика интерфейсов Павла Кондакова</span>
+					<span class="header-logo-text">Сайт портфолио разработчика интерфейсов Павла Кондакова</span>
 				</div>
 				<!-- Навигация-->
 				<nav class="header-nav" hidden>

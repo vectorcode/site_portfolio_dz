@@ -70,10 +70,10 @@
 				</div><!-- /login-bl-body-->
 
 			</div><!-- /login-bl-->
-		</section>
+		</section><!-- /content -->
 		
 		<div class="clearfix"></div>
-		<!-- /content -->
+		
 	</div>	<!-- /wrapper -->
 						
 	<footer class="footer page-footer">

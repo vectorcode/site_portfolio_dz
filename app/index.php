@@ -37,8 +37,11 @@
 	<link rel="stylesheet" href="css/about.css">
 	<link rel="stylesheet" href="css/media.css">
 
+	<!-- <link rel="stylesheet" href="build_css/build.css"> -->
+
 	<!-- JS -->
 	<script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
+	<!-- <script type="text/javascript" src="build_js/modernizr.js"></script>-->
 </script>
 </head>
 <body>
@@ -175,7 +178,7 @@
 					<?php include 'blocks/site_bar.php'; ?>
 				</aside>
 			</div><!-- /wrap-st-2-->
-		</section>
+		</section><!-- /content -->
 		<div class="mobile-soc-bl" hidden>
 			<ul class="soc-seti-block">
 				<li class="soc-seti-item">
@@ -193,7 +196,7 @@
 			</ul>
 		</div>	<!-- /mobile-soc-bl -->	
 		<div class="clearfix"></div>
-		<!-- /content -->
+		
 	</div>	<!-- /wrapper -->
 						
 	<footer class="footer page-footer">
@@ -204,6 +207,8 @@
     <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <!--<script type="text/javascript" src="build_js/build.js"></script>-->
 
     <?php include 'blocks/counters.php'; ?>
 	
