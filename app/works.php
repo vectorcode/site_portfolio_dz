@@ -414,6 +414,8 @@
     <!-- modal-->
     <script src="js/modal-classie.js"></script>
     <script src="js/modalEffects.js"></script>
+    <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+
     <!-- qtip-->
     <script src="js/jquery.qtip.min.js"></script>
     <script src="js/imagesloaded.pkg.min.js"></script>

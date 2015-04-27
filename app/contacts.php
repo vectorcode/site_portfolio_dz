@@ -143,6 +143,7 @@
     <!-- qtip-->
     <script src="js/jquery.qtip.min.js"></script>
     <script src="js/imagesloaded.pkg.min.js"></script>
+    <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
 
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
