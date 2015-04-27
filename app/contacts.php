@@ -38,6 +38,9 @@
 	<link rel="stylesheet" href="css/contacts.css">
 	<link rel="stylesheet" href="css/media.css">
 
+		<!-- qtip -->
+	<link type="text/css" rel="stylesheet" href="css/jquery.qtip.min.css" />
+
 	<!-- JS -->
 	<script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
 </script>
@@ -64,20 +67,33 @@
 						</div>
 						<div class='blue_line'></div>
 						<div class="main-contact-bl-body clearfix">
-							<form id="send_mail" class="send_mail" action="">
+							<form id="send_mail" class="send_mail" action="add_work.php">
+								<div class="block-info  bl-error wrp-bl-info" hidden>
+									<div class="block-info-close bl-error">x</div>
+									<div class="block-info-title bl-error">Ошибка</div>
+									<div class="block-info-content bl-error">Невозможно добавить проект.</div>
+								</div><!-- / block-info -->
+									<div class="wrap-info-bl bl-success wrp-bl-info" hidden>
+										<div class="block-info bl-success">
+											<div class="block-info-close bl-success">x</div>
+											<div class="block-info-title bl-success">Ура!</div>
+											<div class="block-info-content bl-success">Сообщение отправленно.</div>
+										</div><!-- / block-info -->
+									</div><!-- / wrap-info-bl -->
+
 								<div class="block-grid clearfix">
 									<div class="grid-50">
 										<label for="mail_name" class="lable-item">Имя</label>
-										<input type="text" name="mail_name" id="mail_name" class="input-item" placeholder='Как к Вам обращаться'>
+										<input type="text" name="mail_name" id="mail_name" class="input-item add-tooltip" placeholder='Как к Вам обращаться' data-errtxt='Вы не ввели имя' data-pos="left" data-valtype="text">
 									</div>
 									<div class="grid-50">
 										<label for="mail_name" class="lable-item">Email</label>
-										<input type="text" name="mail_name" id="mail_name" class="input-item" placeholder='Куда мне писать'>
+										<input type="text" name="mail_name" id="mail_name" class="input-item add-tooltip" placeholder='Куда мне писать' data-errtxt='Вы не ввели email' data-pos="right" data-valtype="email">
 									</div>
 								</div><!-- /block-grid -->
 								<div class="block-grid clearfix">
 									<label for="mail_mas" class="lable-item">Сообщение</label>
-									<textarea  name="mail_mas" id="mail_mas" rows="8" class="textarea-item" placeholder='Кратко в чем суть'></textarea>
+									<textarea  name="mail_mas" id="mail_mas" rows="8" class="textarea-item add-tooltip" placeholder='Кратко в чем суть' data-errtxt='Ваш вопрос' data-pos="left" data-valtype="text"></textarea>
 								</div><!-- /block-grid -->
 								<label for="mail_capch" class="lable-item">Введите код, указанный на картинке</label>
 								<div class="block-grid clearfix">
@@ -87,7 +103,7 @@
 										</div>
 									</div>
 									<div class="grid-50">
-										<input type="text" name="mail_capch" id="mail_capch" class="input-item capch-inp" placeholder='Введите код'>
+										<input type="text" name="mail_capch" id="mail_capch" class="input-item capch-inp add-tooltip" placeholder='Введите код' data-errtxt='Вы не ввели код' data-pos="right" data-valtype="text">
 									</div>
 									
 								</div><!-- /block-grid -->
@@ -113,22 +129,7 @@
 				</aside>
 			</div><!-- /wrap-st-2-->
 		</section>
-		<div class="mobile-soc-bl" hidden>
-			<ul class="soc-seti-block">
-				<li class="soc-seti-item">
-					<a href="" class="soc-seti-link vk" target='_blank'>Вконтакте</a>
-				</li>
-				<li class="soc-seti-item">
-					<a href="" class="soc-seti-link tw" target='_blank'>Twitter</a>
-				</li>
-				<li class="soc-seti-item">
-					<a href="" class="soc-seti-link fb" target='_blank'>Facebook</a>
-				</li>
-				<li class="soc-seti-item">
-					<a href="" class="soc-seti-link gt" target='_blank'>Github</a>
-				</li>
-			</ul>
-		</div>	<!-- /mobile-soc-bl -->	
+		<?php include 'blocks/mobile_links.php'; ?>
 		<div class="clearfix"></div>
 		<!-- /content -->
 	</div>	<!-- /wrapper -->
@@ -139,6 +140,10 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.js"><\/script>')</script>
+    <!-- qtip-->
+    <script src="js/jquery.qtip.min.js"></script>
+    <script src="js/imagesloaded.pkg.min.js"></script>
+
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 

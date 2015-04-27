@@ -2,6 +2,7 @@
 @media (min-width: 1001px) {
   .work-item:nth-child(3n+1){
    margin-left: 0px;
+   clear: left;
   }
   .work-item:nth-child(3n+3){
      margin-right: 0;

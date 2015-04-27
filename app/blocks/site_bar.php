@@ -18,7 +18,7 @@
 						<div class="contact-bl-title">Контакты</div>
 						<ul class="contact-bl">
 							<li class="contact-bl-item mail">
-								<a href="mailto: info@pavelkondakov.ru" class="contact-bl-item-link ico_mail">info@pk.ru</a>
+								<a href="mailto: hi@pavelkondakov.ru" class="contact-bl-item-link ico_mail">hi@pavelkondakov.ru</a>
 							</li>
 							<li class="contact-bl-item phone">
 								<a href="tel: +79258851647" class="contact-bl-item-link">+79258851647</a>

@@ -37,6 +37,8 @@
 	<link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="css/login.css">
 	<link rel="stylesheet" href="css/media.css">
+		<!-- qtip -->
+	<link type="text/css" rel="stylesheet" href="css/jquery.qtip.min.css" />
 
 	<!-- JS -->
 	<script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
@@ -57,11 +59,24 @@
 					Авторизируйтесь
 				</div><!-- /login-bl-title-->
 				<div class="login-bl-body">
-					<form id="send_login" class="send_login" action="">
+					<form id="send_login" class="send_login" action="add_work.php">
+						<div class="block-info  bl-error wrp-bl-info" hidden>
+							<div class="block-info-close bl-error">x</div>
+								<div class="block-info-title bl-error">Ошибка</div>
+								<div class="block-info-content bl-error">Невозможно добавить проект.</div>
+							</div><!-- / block-info -->
+						<div class="wrap-info-bl bl-success wrp-bl-info" hidden>
+							<div class="block-info bl-success">
+								<div class="block-info-close bl-success">x</div>
+								<div class="block-info-title bl-success">Ура!</div>
+								<div class="block-info-content bl-success">Сообщение отправленно.</div>
+							</div><!-- / block-info -->
+						</div><!-- / wrap-info-bl -->
 						<label for="login_name" class="lable-item">Логин</label>
-						<input type="text" name="login_name" id="login_name" class="input-item" placeholder='Введите логин'>
+						<input type="text" name="login_name" id="login_name" class="input-item add-tooltip" placeholder='Введите логин' data-errtxt='Вы не ввели Логин' data-pos="left" data-valtype="text">
 						<label for="pass_name" class="lable-item">Пароль</label>
-						<input type="text" name="pass_name" id="pass_name" class="input-item" placeholder='Введите пароль'>
+						<input type="text" name="pass_name" id="pass_name" class="input-item add-tooltip" placeholder='Введите пароль'
+						data-errtxt='Вы не ввели пароль' data-pos="left" data-valtype="text">
 						<div class="login-bl-btn">
 							<input type="submit" class="btn btn-send" value="Войти">
 						</div><!-- /login-bl-btn-->
@@ -82,6 +97,10 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.js"><\/script>')</script>
+     <!-- qtip-->
+    <script src="js/jquery.qtip.min.js"></script>
+    <script src="js/imagesloaded.pkg.min.js"></script>
+
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 

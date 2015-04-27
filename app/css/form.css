@@ -101,3 +101,47 @@ font-family: fira_sanslight, Arial, Helvetica, sans-serif;
   margin: 0 auto;
   display: block;
 }
+
+.block-info{
+  font-size: 15px;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.bl-error{
+  background: #f2cccd;
+  color: #f97e76;
+}
+.bl-success{
+  background: #b8e1ce;
+  color: #49bb7b;
+}
+.block-info-close{
+  float: right;
+  line-height: 1;
+  cursor: pointer
+}
+.block-info-title{
+  font-size: 25px;
+}
+.wrap-info-bl{
+  box-sizing: border-box;
+  position: absolute;
+  padding: 20px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 100%;
+  top:174px;
+  left: 0;
+  z-index: 100;
+  background: #eff3f7;
+}
+.toltip_st{
+  color:#fff !important;
+  padding: 2px 5px !important;
+  border: 1px solid #f97e76 !important;
+  background: #f97e76 !important;
+  font-size: 13px !important;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
