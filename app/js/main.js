@@ -1,7 +1,5 @@
-
 (function($){
 	
-
 
 	$(document).ready(function() {
 		// HTML5 placeholders for old browsers 

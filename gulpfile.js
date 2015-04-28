@@ -22,16 +22,16 @@ gulp.task('js', function(){
 });
 //сборка скриптов
 gulp.task('scripts', function() {  
-    gulp.src(['bower/jquery/dist/jquery.js','js/plugins.js','js/main.js'])
+    gulp.src(['./app/bower/jquery/dist/jquery.js', './app/js/*.js'])
        /* .pipe(browserify())*/
-        .pipe(uglify())
+        /*.pipe(uglify())*/
         .pipe(concat('build.js'))
         .pipe(gulp.dest('./app/build_js'))
 })
 //сборка css
 gulp.task('styles', function() {  
-    gulp.src(['bower/normalize.css/normalize.css','css/main.css','css/about.css','css/media.css'])
-        .pipe(styl({compress : true}))
+    gulp.src(['./app/bower/normalize.css/normalize.css', './app/css/*.css'])
+        /*.pipe(styl({compress : false}))*/
         .pipe(concat('build.css'))
         .pipe(gulp.dest('./app/build_css'))
 })
@@ -43,7 +43,7 @@ gulp.task('watch', function () {
   gulp.watch(['./app/*.php'], ['php']);
   gulp.watch(['./app/js/*.js'], ['scripts']);
   gulp.watch(['./app/css/*.css'], ['styles']);
-  opn('http://pkdz.loc/app/');
+  /*opn('http://pkdz.loc/app/');*/
 });
 
 // Задача по-умолчанию
