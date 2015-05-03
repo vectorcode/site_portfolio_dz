@@ -23,6 +23,17 @@
 			formValModul.init('#send_login');//Передаём id формы
 		};
 			
+		//Открытие попапа
+		$('body').on('click', '.md-trigger', function(event) {
+			var id = $(this).data('modal');
+			$('#'+id).bPopup({
+				speed: 650,
+				transition: 'slideDown',
+				onClose: function () {
+				    formValModul.resetForm();
+				}
+			});
+		});// end Открытие попапа
 
 	});//end ready
 

@@ -101,7 +101,7 @@ var formValModul = (function($) {
     },
     _scrW = screen.width > 1000 ? true : false,
     _cnl = function(text){//отображение console.log
-        var view = true;
+        var view = false;
         if (view) {console.log(text)};
     },
     _bindForm = function(form){//Устанавливаем события

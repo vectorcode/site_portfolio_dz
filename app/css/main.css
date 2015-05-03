@@ -1,4 +1,4 @@
- @import url(../fonts/fira/fira.css);
+@import url(../fonts/fira/fira.css);
 @import url(../fonts/Proxima-Nova/proxima-nova.css); 
 
 /*Общии правила*/
@@ -59,6 +59,14 @@ a {
 .wrap-st-2{
 	max-width: 960px;
 	margin: 0 auto;
+}
+
+.blk-for-modal{
+	max-width: 360px;
+	margin: 0px auto;
+}
+.md-modal{
+	display: none;
 }
 
 
