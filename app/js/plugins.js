@@ -201,6 +201,8 @@ var formValModul = (function($) {
             //api.toggle(true);
          }),
         _sendForm = function(form){// отправляем данные формы
+        
+          if (form.data('ajax') !== false) {
 
             var data = form.serialize(),
                 url = form.attr('action');
@@ -229,6 +231,10 @@ var formValModul = (function($) {
                 
             };//end if
 
+          }else{
+            form.unbind('submit');
+            form.submit();
+          }
         };
 
 

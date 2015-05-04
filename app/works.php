@@ -1,3 +1,4 @@
+<?php include 'blocks/session.php' ?>
 <!DOCTYPE html>
 <html lang="ru-RU">
 <head>
@@ -170,6 +171,7 @@
 								    	<figcaption class="work-item-text">Typeplanet - это сервис, позволяющий проходить онлайн тест на определение типа личности по методологии MBTI.</figcaption>
 								   </figure>
 								</li><!-- /work-item-->
+								<?php if ( $_SESSION["logged"]){ ?>
 
 								<li class="work-item">
 									<div class="add-work md-trigger" data-modal="modal-0">
@@ -178,6 +180,7 @@
 									</div><!-- /add-work-->
 								</li><!-- /work-item-->
 							
+								<?php }?>
 								
 							</ul><!-- /bl-works -->
 						</div><!-- /main-cnt-bl-body -->
@@ -204,7 +207,7 @@
 	<!-- Модальные окна-->
 	<div class="blk-for-modal">
 		
-
+	<?php if ( $_SESSION["logged"]){ ?>
 		<div class="md-modal" id="modal-0">
 			<div class="md-content">
 				<div class="file-md">
@@ -259,7 +262,7 @@
 		</div><!-- /add-file-md-->
 			</div>
 		</div><!-- /modal-0 -->
-
+	<?php }?>
 			<!-- Модальные окна 1-->
 		
 		<div class="md-modal" id="modal-1">

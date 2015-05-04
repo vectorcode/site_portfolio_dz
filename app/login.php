@@ -1,3 +1,4 @@
+<?php include 'blocks/session.php' ?>
 <!DOCTYPE html>
 <html lang="ru-RU">
 <head>
@@ -54,28 +55,69 @@
 
 		<!-- content -->	
 		<section class="content-login-bl">
-			<div class="login-bl">
+
+		
+			
+			
+			
+
+
+			
+
+		
+
+
+<?php
+
+
+	if ( !empty($_GET['logout']) ) // если юзер решил выйти
+	{// просто разрушаем переменные
+	 unset($_SESSION['logged'], $_SESSION['login']);
+	}
+
+// сверяем данные из формы логина с нужными логином и паролем
+if ( !empty($_POST['login_name']) and !empty($_POST['pass_name']) )
+{
+ if ( $_POST['login_name'] == 'name' and $_POST['pass_name'] == 'test' ) // это очень грубый вариант авторизации %)
+ {
+ // сохраняем сеансовые переменные logged = true и login с именем пользователя
+ $_SESSION['logged'] = 1;
+ $_SESSION['login'] = 'Admin';
+ }else{ 
+ 	echo '<div class="block-info  bl-error wrp-bl-info">
+							<div class="block-info-close bl-error"></div>
+								<div class="block-info-title bl-error">Ошибка</div>
+								<div class="block-info-content bl-error">Неправельный логин или пароль</div>
+						</div><!-- / block-info -->';}
+}
+
+if ( !isset($_SESSION['logged']) or empty($_SESSION['logged']) ) // если в сессии не указано, что пользователь залогинен
+{
+ // показываем форму для ввода пароля
+ 
+ ?>
+ 			<div class="login-bl">
 				<div class="login-bl-title">
 					Авторизируйтесь
 				</div><!-- /login-bl-title-->
 				<div class="login-bl-body">
-					<form id="send_login" class="send_login" action="add_work.php">
+					<form id="send_login" class="send_login" action="login.php"  method="post" data-ajax='false'>
 						<div class="block-info  bl-error wrp-bl-info" hidden>
 							<div class="block-info-close bl-error">x</div>
 								<div class="block-info-title bl-error">Ошибка</div>
-								<div class="block-info-content bl-error">Невозможно добавить проект.</div>
-							</div><!-- / block-info -->
+								<div class="block-info-content bl-error">Невозможно авторизоваться.</div>
+						</div><!-- / block-info -->
 						<div class="wrap-info-bl bl-success wrp-bl-info" hidden>
 							<div class="block-info bl-success">
 								<div class="block-info-close bl-success">x</div>
 								<div class="block-info-title bl-success">Ура!</div>
-								<div class="block-info-content bl-success">Сообщение отправленно.</div>
+								<div class="block-info-content bl-success">Вы авторизовались.</div>
 							</div><!-- / block-info -->
 						</div><!-- / wrap-info-bl -->
 						<label for="login_name" class="lable-item">Логин</label>
 						<input type="text" name="login_name" id="login_name" class="input-item add-tooltip" placeholder='Введите логин' data-errtxt='Вы не ввели Логин' data-pos="left" data-valtype="text">
 						<label for="pass_name" class="lable-item">Пароль</label>
-						<input type="text" name="pass_name" id="pass_name" class="input-item add-tooltip" placeholder='Введите пароль'
+						<input type="password" name="pass_name" id="pass_name" class="input-item add-tooltip" placeholder='Введите пароль'
 						data-errtxt='Вы не ввели пароль' data-pos="left" data-valtype="text">
 						<div class="login-bl-btn">
 							<input type="submit" class="btn btn-send" value="Войти">
@@ -85,6 +127,30 @@
 				</div><!-- /login-bl-body-->
 
 			</div><!-- /login-bl-->
+ <?php
+}
+else
+{
+ ?>
+ 			<div class="login-bl">
+				<div class="login-bl-title">
+					Вы авторизованны <?=$_SESSION['login']?>
+				</div><!-- /login-bl-title-->
+				<div class="login-bl-body">
+				
+					<div class="login-bl-btn">
+						<a href="/app/works"class="btn btn-send dbl">Страница работы</a>
+					</div><!-- /login-bl-btn-->
+					<div class="login-bl-btn">
+						<a href="/app/login.php?logout=1"class="btn btn-send dbl">Выйти</a>
+					</div><!-- /login-bl-btn-->
+
+				</div><!-- /login-bl-body-->
+			</div><!-- /login-bl-->
+
+ <?php
+}
+?>
 		</section><!-- /content -->
 		
 		<div class="clearfix"></div>

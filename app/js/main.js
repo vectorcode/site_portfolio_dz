@@ -22,6 +22,7 @@
 		if ($('#send_login') !== undefined) {//если есть форма с id #send_mail
 			formValModul.init('#send_login');//Передаём id формы
 		};
+
 			
 		//Открытие попапа
 		$('body').on('click', '.md-trigger', function(event) {
@@ -34,6 +35,28 @@
 				}
 			});
 		});// end Открытие попапа
+
+		/*$('#send_logged').submit(function(event) {
+			console.log($(this).attr('action'));
+			 event.preventDefault();
+			var url = $(this).attr('action');
+
+			if (url) {
+
+               $.ajax({
+                      url: url
+                      
+                }).success(function(response){
+                   console.log(response);
+                }).fail(function(response){
+                    console.log(response);
+                });
+
+             }
+			return false;
+		});
+*/
+
 
 	});//end ready
 

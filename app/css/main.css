@@ -68,6 +68,9 @@ a {
 .md-modal{
 	display: none;
 }
+.dbl{
+	display: block;
+}
 
 
 .line-gradient{
@@ -390,7 +393,7 @@ background: linear-gradient(to right, rgb(231, 239, 243) 0%, rgb(151, 186, 197) 
 	/* background-position: -119px 0px; */
 	text-indent: -9999px;
 }
-.lock-bl-link:hover{
+.lock-bl-link:hover, .lock-bl-link.logged {
 	background-position: -119px 0px;
 }	
 .footer-text{

@@ -1,3 +1,4 @@
+<?php include 'blocks/session.php' ?>
 <!DOCTYPE html>
 <html lang="ru-RU">
 <head>
