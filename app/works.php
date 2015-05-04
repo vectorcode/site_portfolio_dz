@@ -37,11 +37,9 @@
 	<link rel="stylesheet" href="css/works.css">
 	<link rel="stylesheet" href="css/media.css">
 	<link rel="stylesheet" href="css/form.css">
-		<!-- modal -->
-		 <link rel="stylesheet" href="css/modal.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/modal-window.css" /> -->
+
 	
-		<!-- qtip -->
+	<!-- qtip -->
 	<link type="text/css" rel="stylesheet" href="css/jquery.qtip.min.css" />
 	
 

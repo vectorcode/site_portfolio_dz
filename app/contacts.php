@@ -43,7 +43,7 @@
 
 	<!-- JS -->
 	<script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
-</script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 <?php $act_contacts = 'active'; ?>
@@ -67,11 +67,11 @@
 						</div>
 						<div class='blue_line'></div>
 						<div class="main-contact-bl-body clearfix">
-							<form id="send_mail" class="send_mail" action="add_work.php">
+							<form id="send_mail" class="send_mail" action="sendmail.php">
 								<div class="block-info  bl-error wrp-bl-info" hidden>
 									<div class="block-info-close bl-error">x</div>
 									<div class="block-info-title bl-error">Ошибка</div>
-									<div class="block-info-content bl-error">Невозможно добавить проект.</div>
+									<div class="block-info-content bl-error">Невозможно дотправить сообщение.</div>
 								</div><!-- / block-info -->
 									<div class="wrap-info-bl bl-success wrp-bl-info" hidden>
 										<div class="block-info bl-success">
@@ -95,17 +95,19 @@
 									<label for="mail_mas" class="lable-item">Сообщение</label>
 									<textarea  name="mail_mas" id="mail_mas" rows="8" class="textarea-item add-tooltip" placeholder='Кратко в чем суть' data-errtxt='Ваш вопрос' data-pos="left" data-valtype="text"></textarea>
 								</div><!-- /block-grid -->
-								<label for="mail_capch" class="lable-item">Введите код, указанный на картинке</label>
+								<!-- <label for="mail_capch" class="lable-item">Введите код, указанный на картинке</label> -->
+							
 								<div class="block-grid clearfix">
-									<div class="grid-50">
+									<!-- <div class="grid-50">
 										<div class="block-capcha">
 											<img src="img/capch.png">
 										</div>
 									</div>
 									<div class="grid-50">
-										<input type="text" name="mail_capch" id="mail_capch" class="input-item capch-inp add-tooltip" placeholder='Введите код' data-errtxt='Вы не ввели код' data-pos="right" data-valtype="text">
-									</div>
+										<input type="text" name="mail_capch" id="mail_capch" class="input-item capch-inp add-tooltip" placeholder='Введите код' data-errtxt='Вы не ввели код' value='1' data-pos="right" data-valtype="text">
+									</div> -->
 									
+									<div class="g-recaptcha" data-sitekey="6LfYNgYTAAAAAAiwXhE_5oJzZKKkRCHDcqjZy8o-"></div>
 								</div><!-- /block-grid -->
 								<div class="block-grid clearfix">
 									
@@ -117,6 +119,7 @@
 									</div>
 									
 								</div><!-- /block-grid -->
+
 							</form><!-- /form send_mail-->
 						</div><!-- /main-cnt-bl-body -->
 

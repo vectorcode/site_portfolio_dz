@@ -211,12 +211,16 @@ var formValModul = (function($) {
                $.ajax({
                       url: url,
                       type: "POST",
-                      data: data,
-                      dataType: "JSON"
+                      data: data/*,
+                      dataType: "json"*/
                       
                 }).success(function(response){
                     _cnl(response);
-                    form.find('.bl-success').show('fast');
+                    if (response) {
+                      form.find('.bl-success').show('fast');
+                    }else{
+                      form.find('.bl-error').show('fast');
+                    };
                 }).fail(function(response){
                     _cnl('error '+response);
                     form.find('.bl-error').show('fast');
