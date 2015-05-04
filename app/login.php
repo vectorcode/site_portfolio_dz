@@ -139,10 +139,10 @@ else
 				<div class="login-bl-body">
 				
 					<div class="login-bl-btn">
-						<a href="/app/works"class="btn btn-send dbl">Страница работы</a>
+						<a href="works"class="btn btn-send dbl">Страница работы</a>
 					</div><!-- /login-bl-btn-->
 					<div class="login-bl-btn">
-						<a href="/app/login.php?logout=1"class="btn btn-send dbl">Выйти</a>
+						<a href="login.php?logout=1"class="btn btn-send dbl">Выйти</a>
 					</div><!-- /login-bl-btn-->
 
 				</div><!-- /login-bl-body-->

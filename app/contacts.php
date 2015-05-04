@@ -72,7 +72,7 @@
 								<div class="block-info  bl-error wrp-bl-info" hidden>
 									<div class="block-info-close bl-error">x</div>
 									<div class="block-info-title bl-error">Ошибка</div>
-									<div class="block-info-content bl-error">Невозможно дотправить сообщение.</div>
+									<div class="block-info-content bl-error">Невозможно отправить сообщение.</div>
 								</div><!-- / block-info -->
 									<div class="wrap-info-bl bl-success wrp-bl-info" hidden>
 										<div class="block-info bl-success">
@@ -88,8 +88,8 @@
 										<input type="text" name="mail_name" id="mail_name" class="input-item add-tooltip" placeholder='Как к Вам обращаться' data-errtxt='Вы не ввели имя' data-pos="left" data-valtype="text">
 									</div>
 									<div class="grid-50">
-										<label for="mail_name" class="lable-item">Email</label>
-										<input type="text" name="mail_name" id="mail_name" class="input-item add-tooltip" placeholder='Куда мне писать' data-errtxt='Вы не ввели email' data-pos="right" data-valtype="email">
+										<label for="mail_email" class="lable-item">Email</label>
+										<input type="text" name="mail_email" id="mail_email" class="input-item add-tooltip" placeholder='Куда мне писать' data-errtxt='Вы не ввели email' data-pos="right" data-valtype="email">
 									</div>
 								</div><!-- /block-grid -->
 								<div class="block-grid clearfix">

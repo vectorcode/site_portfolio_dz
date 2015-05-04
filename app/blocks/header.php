@@ -7,13 +7,13 @@
 				<nav class="header-nav" hidden>
 					<ul class="nav-block" hidden>
 						<li class="header-nav-item">
-							<a href="/app/" class="header-nav-link <?php echo $act_about; ?> first">Обо мне</a>
+							<a href="index" class="header-nav-link <?php echo $act_about; ?> first">Обо мне</a>
 						</li>
 						<li class="header-nav-item">
-							<a href="works.php" class="header-nav-link <?php echo $act_works; ?>">Мои работы</a>
+							<a href="works" class="header-nav-link <?php echo $act_works; ?>">Мои работы</a>
 						</li>
 						<li class="header-nav-item">
-							<a href="contacts.php" class="header-nav-link <?php echo $act_contacts; ?>">Связаться со мной</a>
+							<a href="contacts" class="header-nav-link <?php echo $act_contacts; ?>">Связаться со мной</a>
 						</li>
 					</ul>
 				</nav><!-- /Навигация-->

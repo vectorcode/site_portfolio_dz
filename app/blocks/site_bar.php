@@ -2,13 +2,13 @@
 					<nav class="sitebar-nav-block">
 						<ul class="nav-block">
 							<li class="sitebar-nav-item">
-								<a href="/app/" class="sitebar-nav-link <?php echo $act_about; ?>">Обо мне</a>
+								<a href="index" class="sitebar-nav-link <?php echo $act_about; ?>">Обо мне</a>
 							</li>
 							<li class="sitebar-nav-item">
-								<a href="works.php" class="sitebar-nav-link <?php echo $act_works; ?>">Мои работы</a>
+								<a href="works" class="sitebar-nav-link <?php echo $act_works; ?>">Мои работы</a>
 							</li>
 							<li class="sitebar-nav-item">
-								<a href="contacts.php" class="sitebar-nav-link <?php echo $act_contacts; ?>">Связаться со мной</a>
+								<a href="contacts" class="sitebar-nav-link <?php echo $act_contacts; ?>">Связаться со мной</a>
 							</li>
 						</ul>
 					</nav>
