@@ -22,7 +22,9 @@
 	    //проверка на существование данных
 	    if (isset($prj_name) && isset($prj_url) && isset($prj_text)){
 	    	
-	    	include "libs/smottt/wideimage/lib/WideImage/WideImage.php";
+	    	/*include "libs/smottt/wideimage/lib/WideImage/WideImage.php";*/
+	    	
+	    	
 	    	
 	    	$file_name = $file['name'];
 	    	$file_dist = __DIR__.'/uploads/'.$file_name;
