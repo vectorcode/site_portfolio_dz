@@ -10,24 +10,43 @@
 		if (isset($_POST['prj_text'])) {$prj_text=$_POST['prj_text']; if ($prj_text == '') {unset($prj_text);}}
 
 
-	    // Получаем доступ к файлу
+	     // Получаем доступ к файлу
 	    $file = $_FILES['prj_img'];
+	    $file_name = $file['name'];
+	   
 
-	    if($file['size'] == 0 || $file['size'] > 2097152){
-	    	$_SESSION['status'] = "0";
+	
+
+	    $path_parts = pathinfo($file_name);
+		$ext = substr($file_name,strpos($file_name,'.'),strlen($file_name)-1); 
+		$filetypes = array('.jpg','.gif','.bmp','.png','.JPG','.BMP','.GIF','.PNG','.jpeg','.JPEG');
+		  
+		$file_name = substr(md5(time()),0,8).'.'. $path_parts['extension'];
+		$file_dist = __DIR__.'/uploads/'.  $file_name;
+		$size = 1024000;
+		 if ( $file['size'] < $size) {
+			if(!in_array($ext,$filetypes)){
+				
+				$_SESSION['status'] = "0";
+		        $_SESSION['message'] = "Данный формат файлов не поддерживается";
+		        header("Location: works.php");
+		        exit;
+			}
+		 }else{
+		 	$_SESSION['status'] = "0";
 	        $_SESSION['message'] = "Файл не выбран или превышает 2МБ";
 	        header("Location: works.php");
-	    }
+	        exit;
+		 }
+
+
+
 
 	    //проверка на существование данных
 	    if (isset($prj_name) && isset($prj_url) && isset($prj_text)){
-	    	
-	    	/*include "libs/smottt/wideimage/lib/WideImage/WideImage.php";*/
-	    	
+	
 	    	
 	    	
-	    	$file_name = $file['name'];
-	    	$file_dist = __DIR__.'/uploads/'.$file_name;
 	    	
 	    	if(move_uploaded_file($file['tmp_name'], $file_dist)){
 

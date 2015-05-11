@@ -1,4 +1,14 @@
 <?php include 'blocks/session.php' ?>
+
+<?php 
+include "blocks/db.php";
+$result = mysql_query("SELECT * from works",$db);
+
+while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+	$data[] = $row;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="ru-RU">
 <head>
@@ -93,6 +103,32 @@
 						<div class="main-cnt-bl-title">Мои работы</div>
 						<div class="main-cnt-bl-body clearfix">
 							<ul class="bl-works">
+
+								<?php 
+									foreach ($data as $key) {
+										echo "
+											<li class='work-item'>
+													<figure class='work-item-fgr'>
+														<div class='work-item-link md-trigger' data-modal='modal-".$key['id']."'>
+														   <div class='work-item-blk-img mask-style'>
+											                    <img src='uploads/".$key['prj_img']."' class='work-item-img'>
+											                    <div class='mask'>
+											                        <p>Описание</p>
+											                    </div>
+											                </div>
+														</div>
+														<a href='http://".$key['prj_url']."' target='_blank' class='work-item-link-text'>".$key['prj_name']."</a>
+												    	<figcaption class='work-item-text'>".$key['prj_text']."</figcaption>
+												   </figure>
+												</li>
+
+
+										";
+									}
+
+									
+
+								?>
 								<li class="work-item">
 									<figure class="work-item-fgr">
 										<div class="work-item-link md-trigger" data-modal="modal-1">
@@ -179,7 +215,7 @@
 								    	<figcaption class="work-item-text">Виджет разработан для продажи билетов на мероприятия с большими концертными залами или вообще не имеющих посадочные места.</figcaption>
 								   </figure>
 								</li><!-- /work-item-->
-								<li class="work-item">
+								<!-- <li class="work-item">
 									<figure class="work-item-fgr">
 										<div class="work-item-link md-trigger" data-modal="modal-7">
 										   <div class="work-item-blk-img mask-style">
@@ -192,7 +228,7 @@
 										<a href="http://typeplanet.ru" target="_blank" class="work-item-link-text">Сервис типирования</a>
 								    	<figcaption class="work-item-text">Typeplanet - это сервис, позволяющий проходить онлайн тест на определение типа личности по методологии MBTI.</figcaption>
 								   </figure>
-								</li><!-- /work-item-->
+								</li> --><!-- /work-item-->
 								<?php if ( $_SESSION["logged"]){ ?>
 
 								<li class="work-item">
@@ -285,6 +321,30 @@
 			</div>
 		</div><!-- /modal-0 -->
 	<?php }?>
+
+
+		<?php 
+			foreach ($data as $key) {
+				echo "<div class='md-modal' id='modal-".$key['id']."'>
+						<div class='md-content'>
+							<div class='file-md'>
+								<div class='file-md-title'>
+									".$key['prj_name']."
+									<div class='md-close file-md-close b-close'>x</div>
+								</div>
+								<div class='file-md-cont'>
+									<img src='uploads/".$key['prj_img']."' class='portf-item-img'>
+									<div class='portf-item-bl-link'>
+										<a href='http://".$key['prj_url']."' target='_blank' class='portf-item-link'>".$key['prj_url']."</a>
+									</div>
+									<div class='portf-item-text'>".$key['prj_text']."</div>
+								</div>
+							</div>
+						</div>
+					
+					</div>";
+			}
+		?>
 			<!-- Модальные окна 1-->
 		
 		<div class="md-modal" id="modal-1">

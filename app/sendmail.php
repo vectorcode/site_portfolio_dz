@@ -27,8 +27,13 @@ if ($result->success) {
 	$site_owners_name = 'PavelKondakov.ru'; // replace with your name
 
 
-		/*require_once('phpMailer/class.phpmailer.php');*/
-		require_once('libs/phpmailer/phpmailer/class.phpmailer.php');
+		/*require_once('phpMailer/class.phpmailer.php');
+		require_once('libs/phpmailer/phpmailer/class.phpmailer.php');*/
+		require_once "libs/autoload.php";
+		require_once "libs/phpmailer/phpmailer/language/phpmailer.lang-ru.php";
+
+
+
 		$mail = new PHPMailer();
 		
 		$mail->CharSet = "UTF-8";
