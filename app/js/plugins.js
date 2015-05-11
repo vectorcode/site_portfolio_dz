@@ -123,7 +123,7 @@ var formValModul = (function($) {
        });
       
       //прячим информационные сообщения
-      form.on('click', '.block-info-close', function(event) {
+      $('body').on('click', '.block-info-close', function(event) {
         $('.wrp-bl-info').hide('fast');
       });
 

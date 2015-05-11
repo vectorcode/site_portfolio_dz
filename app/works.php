@@ -66,7 +66,29 @@
 		<section class="content">
 			<div class="wrap-st-2">
 				<article class="main-content">
-			
+				<?php if ($_SESSION["message"]){ 
+					
+						if ($_SESSION['status'] == '1') {
+							echo '<div class="wrap-info-bl bl-success wrp-bl-info">
+								<div class="block-info bl-success">
+									<div class="block-info-close bl-success">x</div>
+									<div class="block-info-title bl-success">Ура!</div>
+									<div class="block-info-content bl-success">'.$_SESSION["message"].'.</div>
+								</div><!-- / block-info -->
+							</div><!-- / wrap-info-bl -->';
+							
+							
+						}else{
+							echo '<div class="block-info  bl-error wrp-bl-info">
+								<div class="block-info-close bl-error">x</div>
+								<div class="block-info-title bl-error">Ошибка</div>
+								<div class="block-info-content bl-error">'.$_SESSION["message"].'</div>
+							</div><!-- / block-info -->';
+						}
+						unset($_SESSION['message']);
+						unset($_SESSION['status']);
+					}
+				?>
 					<section class="main-cnt-bl">
 						<div class="main-cnt-bl-title">Мои работы</div>
 						<div class="main-cnt-bl-body clearfix">
@@ -216,7 +238,7 @@
 				<div class="file-md-close b-close">x</div>
 			</div>
 			<div class="file-md-cont">
-				<form action="add_work.php" id="file-md-form">
+				<form action="add_work.php" id="file-md-form" data-ajax='false' method="post" enctype="multipart/form-data">
 					<div class="block-info  bl-error wrp-bl-info" hidden>
 						<div class="block-info-close bl-error">x</div>
 						<div class="block-info-title bl-error">Ошибка</div>

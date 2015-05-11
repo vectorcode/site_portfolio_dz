@@ -1,0 +1,90 @@
+[
+    {
+        "name": "smottt/wideimage",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/smottt/WideImage.git",
+            "reference": "ee2e71be7e3f298248bd6d0f4a157bb42f432ba7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/smottt/WideImage/zipball/ee2e71be7e3f298248bd6d0f4a157bb42f432ba7",
+            "reference": "ee2e71be7e3f298248bd6d0f4a157bb42f432ba7",
+            "shasum": ""
+        },
+        "time": "2014-10-05 14:59:53",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "WideImage": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0",
+            "LGPL-2.1"
+        ],
+        "description": "An open-source PHP library for image manipulation. (With namespaces, PHP 5.3+)",
+        "homepage": "http://wideimage.sourceforge.net"
+    },
+    {
+        "name": "phpmailer/phpmailer",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/PHPMailer/PHPMailer.git",
+            "reference": "adea5c6d601c300c7bda731cf1ea783c22ed404d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/adea5c6d601c300c7bda731cf1ea783c22ed404d",
+            "reference": "adea5c6d601c300c7bda731cf1ea783c22ed404d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.0.0"
+        },
+        "require-dev": {
+            "phpdocumentor/phpdocumentor": "*",
+            "phpunit/phpunit": "4.3.*"
+        },
+        "time": "2015-05-06 22:41:48",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "class.phpmailer.php",
+                "class.smtp.php",
+                "class.pop3.php",
+                "extras/EasyPeasyICS.php",
+                "extras/ntlm_sasl_client.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-2.1"
+        ],
+        "authors": [
+            {
+                "name": "Jim Jagielski",
+                "email": "jimjag@gmail.com"
+            },
+            {
+                "name": "Marcus Bointon",
+                "email": "phpmailer@synchromedia.co.uk"
+            },
+            {
+                "name": "Andy Prevost",
+                "email": "codeworxtech@users.sourceforge.net"
+            },
+            {
+                "name": "Brent R. Matzelle"
+            }
+        ],
+        "description": "PHPMailer is a full-featured email creation and transfer class for PHP"
+    }
+]
